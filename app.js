@@ -32,11 +32,11 @@ function subTotal(){
     const firstClassCost = firstClassNumber * 150;
     const economyClassCost = economyClassNumber * 100;
     const  subTotal = firstClassCost + economyClassCost;
-    document.getElementById("subTotal").innerText = subTotal;
+    document.getElementById("subTotal").innerText ="$"+ subTotal;
     const tax = subTotal * 0.10;
-    document.getElementById("tax").innerText = tax;
+    document.getElementById("tax").innerText ="$"+ tax;
     const grandTotal = tax + subTotal;
-    document.getElementById("grandTotal").innerText = grandTotal;
+    document.getElementById("grandTotal").innerText ="$"+ grandTotal;
 }
 
 
@@ -50,4 +50,7 @@ function getValueNumber(Value,type){
     }
 const valueNumber = parseInt(valueString);
 return valueNumber;
+}
+function message(){
+    alert("Your Total Price Would be : "+document.getElementById("grandTotal").innerText  +"\n Are you sure for submit ?");
 }
