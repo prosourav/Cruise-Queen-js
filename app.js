@@ -27,7 +27,16 @@ function numberCalculation(select, currentValue, isIncrease){
 
 
 function subTotal(){
-    
+    const firstClassNumber = getValueNumber("firstClassData","inputField");
+    const economyClassNumber =  getValueNumber("economyClassData","inputField");
+    const firstClassCost = firstClassNumber * 150;
+    const economyClassCost = economyClassNumber * 100;
+    const  subTotal = firstClassCost + economyClassCost;
+    document.getElementById("subTotal").innerText = subTotal;
+    const tax = subTotal * 0.10;
+    document.getElementById("tax").innerText = tax;
+    const grandTotal = tax + subTotal;
+    document.getElementById("grandTotal").innerText = grandTotal;
 }
 
 
