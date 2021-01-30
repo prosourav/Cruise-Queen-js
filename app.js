@@ -1,9 +1,4 @@
-// document.getElementById("firstClassAdd").addEventListener("click",function(){
-//     const firstClassInput = document.getElementById("firstClassData").value;
-//     const firstClassValue = parseInt(firstClassInput);
-//     const newValue = firstClassValue + 1;
-//     document.getElementById("firstClassData").value = newValue;
-// })
+  
 numberCalculation("firstClassAdd","firstClassData",true);
 numberCalculation("firstClassLess","firstClassData",false);
 numberCalculation("economyClassAdd","economyClassData",true);
