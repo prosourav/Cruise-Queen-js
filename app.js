@@ -52,5 +52,5 @@ const valueNumber = parseInt(valueString);
 return valueNumber;
 }
 function message(){
-    alert("Your Total Price Would be : "+document.getElementById("grandTotal").innerText  +"\n Are you sure for submit ?");
+    alert("You have successfully booked ticket worth : "+document.getElementById("grandTotal").innerText );
 }
